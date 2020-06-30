@@ -1,0 +1,129 @@
+/*
+*Font stack
+*/h1 { font-family: "Trebuchet MS"; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 100; line-height: 23px; } h3 { font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } p { font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } blockquote { font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
+body {
+  margin: 0;
+  padding: 0;
+  color: #5d6d7e;
+  background-color: #FFFFFF;
+}
+
+/*
+ * Formatting the header area
+ */
+header {
+  background-color: #272343;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+header h5 {
+  text-align: center;
+}
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #FFFFFF;
+  float: left;
+}
+
+header h1.logo:hover {
+  content:"anthonykzj@gmail.com";
+}
+/*
+ * Center the body content
+ */
+ div.home{
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
+  div.about{
+    text-align: left;
+  }
+   div.plot{
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+   }
+.bottomInfo{
+  display: inline-block;
+  background-color: #e3f6f5;
+}
+  h2 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+
+  h3 {
+    font-size: 1.0em;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #999;
+  }
+
+  .menu {
+    float: right;
+    margin-top: 8px;
+  }
+
+  .menu li {
+    display: inline;
+  }
+
+  .menu li + li {
+    margin-left: 35px;
+  }
+
+  .menu li a {
+    color: #c092ff;
+    text-decoration: none;
+  }
+
+
+h1.plot {
+  padding: 0px 0 0px 0;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li + li {
+  margin-left: 35px;
+}
+
+.menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}

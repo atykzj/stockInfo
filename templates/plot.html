@@ -1,0 +1,44 @@
+<!-- When start, program sees extends and go to global.html -->
+{%extends "global.html"%}
+{%block content%}
+<div class= "plot">
+  <h5>This application is hosted on Heroku's free server, there would be processing error due to limited load resources. Please refresh if encountered.</h5>
+  <h1 class = "plot">US Stock Price, News, Annual Report Sentiments.</h1>
+  <form method = "POST">
+    <input title="Input only Alphanumeric Characters, of 1-10 characters." placeholder="Ticker Symbol. Eg. TSLA" type="text" name="symbol" pattern = "[A-Za-z0-9]{1,10}" required>
+    <input title="Year from 1980-2019 as in YYYY, eg. 2010." placeholder="Type a year from 1980-2019." type="text" name="year" pattern = "(19[89]\d|20[01]\d|2020)">
+    <button type = "submit">Show</button>
+  </form>
+</div>
+<br>
+<script type="text/javascript" src={{cdn_js | safe}}></script>
+<div class = "plot">
+{{s1 | safe}}
+{{d1 | safe}}
+  <h4>{{msg}}</h4>
+</div>
+<br>
+<div>
+  <div class="bottomInfo" style="width: 50%; height: 540px; float:left; padding: 0px 50px 0px 50px;border:solid 2px#272343;overflow:scroll;overflow-x:hidden;overflow-y:scroll;">
+    <a href="https://newsapi.org/">*All credits to News API. Click here for details.</a>
+    <h1>{{headline}}</h1>
+    {% for post in news %}
+    <h4>{{post['title']}}</h4>
+    <i>{{post['publishedAt']}}</i><br>
+    <i><a href = "{{post['url']}}" target="_blank">Click here for URL link</a></i>
+    <p>{{post['description']}}</p>
+    {% endfor %}
+  </div>
+  <div class="bottomInfo" style="width: 40%; height: 540px; float:right;border:solid 2px#272343;">
+  {% if mlLink !=' '%}
+    <a id="demo" href={{mlLink}}>{{mlMsg}}</a>
+    <h1>{{mlHeader}}</h1>
+  {% endif %}
+    <script type="text/javascript" style="background-color: white;"src={{cdn_js | safe}}></script>
+      {{s2 | safe}}
+      {{d2 | safe}}
+    <a href="https://sraf.nd.edu/textual-analysis/resources/">{{disclaimer}}</a>
+    
+  </div>
+</div>
+{%endblock%}
