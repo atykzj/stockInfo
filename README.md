@@ -5,5 +5,5 @@ Connected to ml.py, which is a file containing all Machine Learning functions th
 Misc. files that ml.py uses are the loughran_mcdonald_master_dic_2016.csv, ticker-cik.txt
 
 <h3>To Run</h3>
-Multiline comment out all DB on line 32, 51. And on 87-92.
+Multiline comment out all DB on line 32, 51. And on 87-92. <br/>
 ![Picture](readme/Demo.png?raw=true "Website")
